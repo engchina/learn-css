@@ -13,7 +13,7 @@ export const Title = styled.h1`
   font-weight: 600;
 `;
 
-export const Description = styled.p`
+export const Description = styled.div`
   margin: 1rem 0;
   line-height: 1.6;
   color: #666;

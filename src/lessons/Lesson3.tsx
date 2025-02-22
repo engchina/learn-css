@@ -162,7 +162,7 @@ const PerformanceDemo = styled.div`
   }
 `;
 
-const Lesson4 = () => {
+const Lesson3 = () => {
   return (
     <Container>
       <Title>CSS动画精通</Title>
@@ -191,32 +191,32 @@ const Lesson4 = () => {
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }`}</CodeBlock>
 
-      <h2 className="text-xl font-semibold mt-6 mb-4">2. 关键帧动画基础</h2>
+      <h2 className="text-xl font-semibold mt-6 mb-4">2. 关键帧动画</h2>
       <Description>
-        使用@keyframes和animation属性创建基础的动画效果。
+        使用@keyframes和animation属性创建动画效果，从基础的位移动画到复杂的组合动画。
       </Description>
       <DemoContainer>
-        <KeyframeBox />
+        <div className="space-y-8">
+          <div>
+            <p className="mb-4 text-gray-600">基础位移动画：</p>
+            <KeyframeBox />
+          </div>
+          <div>
+            <p className="mb-4 text-gray-600">复杂组合动画：</p>
+            <AdvancedKeyframes>
+              <div className="ball" />
+            </AdvancedKeyframes>
+          </div>
+        </div>
       </DemoContainer>
-      <CodeBlock>{`@keyframes bounce {
-  0%, 100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-20px);
-  }
-}`}</CodeBlock>
+      <CodeBlock>{`/* 基础位移动画 */
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+}
 
-      <h2 className="text-xl font-semibold mt-6 mb-4">3. 高级关键帧动画</h2>
-      <Description>
-        创建复杂的动画序列，包括多个属性的同时变化和精确的时间控制。
-      </Description>
-      <DemoContainer>
-        <AdvancedKeyframes>
-          <div className="ball" />
-        </AdvancedKeyframes>
-      </DemoContainer>
-      <CodeBlock>{`@keyframes bounce-rotate {
+/* 复杂组合动画 */
+@keyframes bounce-rotate {
   0% { transform: translateY(0) rotate(0deg); }
   50% { transform: translateY(-100px) rotate(180deg); }
   100% { transform: translateY(0) rotate(360deg); }
@@ -302,4 +302,4 @@ animation: slide 3s infinite;
   );
 };
 
-export default Lesson4;
+export default Lesson3;

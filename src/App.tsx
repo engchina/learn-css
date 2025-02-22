@@ -12,7 +12,6 @@ import Lesson8 from './lessons/Lesson8';
 import Lesson9 from './lessons/Lesson9';
 import Lesson10 from './lessons/Lesson10';
 import Lesson11 from './lessons/Lesson11';
-import Lesson12 from './lessons/Lesson12';
 import Lesson13 from './lessons/Lesson13';
 import Lesson14 from './lessons/Lesson14';
 import Lesson15 from './lessons/Lesson15';
@@ -21,17 +20,18 @@ import Lesson17 from './lessons/Lesson17';
 import Lesson18 from './lessons/Lesson18';
 import Lesson19 from './lessons/Lesson19';
 import Lesson20 from './lessons/Lesson20';
-import Lesson21 from './lessons/Lesson21';
 import Lesson22 from './lessons/Lesson22';
 import Lesson23 from './lessons/Lesson23';
 import Lesson24 from './lessons/Lesson24';
 import Lesson25 from './lessons/Lesson25';
 import Lesson26 from './lessons/Lesson26';
-import Lesson27 from './lessons/Lesson27';
 import Lesson28 from './lessons/Lesson28';
 import Lesson29 from './lessons/Lesson29';
 import Lesson30 from './lessons/Lesson30';
-
+import Lesson31 from './lessons/Lesson31';
+import CSSAnimationMastery from './lessons/CSSAnimationMastery';
+import CSSEngineeringAndPerformance from './lessons/CSSEngineeringAndPerformance';
+import GridLayoutGuide from './lessons/GridLayoutGuide';
 
 const AppContainer = styled.div`
   min-height: 100vh;
@@ -100,36 +100,37 @@ function App() {
                 ))}
               </LessonGrid>
             } />
-            <Route path="/lesson/1" element={<Lesson1 />} />
-            <Route path="/lesson/2" element={<Lesson2 />} />
-            <Route path="/lesson/3" element={<Lesson3 />} />
-            <Route path="/lesson/4" element={<Lesson4 />} />
-            <Route path="/lesson/5" element={<Lesson5 />} />
-            <Route path="/lesson/6" element={<Lesson6 />} />
-            <Route path="/lesson/7" element={<Lesson7 />} />
-            <Route path="/lesson/8" element={<Lesson8 />} />
-            <Route path="/lesson/9" element={<Lesson9 />} />
-            <Route path="/lesson/10" element={<Lesson10 />} />
-            <Route path="/lesson/11" element={<Lesson11 />} />
-            <Route path="/lesson/12" element={<Lesson12 />} />
-            <Route path="/lesson/13" element={<Lesson13 />} />
-            <Route path="/lesson/14" element={<Lesson14 />} />
-            <Route path="/lesson/15" element={<Lesson15 />} />
-            <Route path="/lesson/16" element={<Lesson16 />} />
-            <Route path="/lesson/17" element={<Lesson17 />} />
-            <Route path="/lesson/18" element={<Lesson18 />} />
-            <Route path="/lesson/19" element={<Lesson19 />} />
-            <Route path="/lesson/20" element={<Lesson20 />} />
-            <Route path="/lesson/21" element={<Lesson21 />} />
-            <Route path="/lesson/22" element={<Lesson22 />} />
-            <Route path="/lesson/23" element={<Lesson23 />} />
-            <Route path="/lesson/24" element={<Lesson24 />} />
-            <Route path="/lesson/25" element={<Lesson25 />} />
-            <Route path="/lesson/26" element={<Lesson26 />} />
-            <Route path="/lesson/27" element={<Lesson27 />} />
-            <Route path="/lesson/28" element={<Lesson28 />} />
-            <Route path="/lesson/29" element={<Lesson29 />} />
-            <Route path="/lesson/30" element={<Lesson30 />} />
+            <Route path="/lesson1" element={<Lesson1 />} />
+            <Route path="/lesson2" element={<Lesson2 />} />
+            <Route path="/lesson3" element={<Lesson3 />} />
+            <Route path="/lesson4" element={<Lesson4 />} />
+            <Route path="/lesson5" element={<Lesson5 />} />
+            <Route path="/lesson6" element={<Lesson6 />} />
+            <Route path="/lesson7" element={<Lesson7 />} />
+            <Route path="/lesson8" element={<Lesson8 />} />
+            <Route path="/lesson9" element={<Lesson9 />} />
+            <Route path="/lesson10" element={<Lesson10 />} />
+            <Route path="/lesson11" element={<Lesson11 />} />
+            <Route path="/lesson13" element={<Lesson13 />} />
+            <Route path="/lesson14" element={<Lesson14 />} />
+            <Route path="/lesson15" element={<Lesson15 />} />
+            <Route path="/lesson16" element={<Lesson16 />} />
+            <Route path="/lesson17" element={<Lesson17 />} />
+            <Route path="/lesson18" element={<Lesson18 />} />
+            <Route path="/lesson19" element={<Lesson19 />} />
+            <Route path="/lesson20" element={<Lesson20 />} />
+            <Route path="/lesson22" element={<Lesson22 />} />
+            <Route path="/lesson23" element={<Lesson23 />} />
+            <Route path="/lesson24" element={<Lesson24 />} />
+            <Route path="/lesson25" element={<Lesson25 />} />
+            <Route path="/lesson26" element={<Lesson26 />} />
+            <Route path="/lesson28" element={<Lesson28 />} />
+            <Route path="/lesson29" element={<Lesson29 />} />
+            <Route path="/lesson30" element={<Lesson30 />} />
+            <Route path="/lesson31" element={<Lesson31 />} />
+            <Route path="/css-animation-mastery" element={<CSSAnimationMastery />} />
+            <Route path="/css-engineering-performance" element={<CSSEngineeringAndPerformance />} />
+            <Route path="/grid-layout-guide" element={<GridLayoutGuide />} />
           </Routes>
         </MainContent>
       </AppContainer>
